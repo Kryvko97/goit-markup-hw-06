@@ -420,16 +420,15 @@ padding-bottom: 30px;}
 }
 /*-------------ФУТЕР--------------*/
 .footer {
-  
+
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
 
 }
-.footer{
-  display: flex;
-  
+.footer-contact-box{
+  flex-grow: 1;
 }
 .footer-list{
 }
@@ -471,6 +470,7 @@ color: var(--color-h1-title);
   
 }
 .footer-icon-box{
+  margin-left:  70px;
 }
 .footer-icon-title{
 font-weight: 500;
@@ -513,9 +513,10 @@ margin-bottom: 20px;
 }
 .footer-box{
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
 }
 .footer-form{
+  margin-left: 93px;
 
 }
 .email-imput-wrap{
@@ -637,14 +638,12 @@ margin-bottom: 15px;
 .modal-imput{
 width: 440px;
 height: 40px;
-margin-bottom: 15px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 padding-left: 32px;
 outline: transparent;
 transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-imput:focus,.modal-imput:hover{
  border-color: #2196F3;
@@ -662,24 +661,28 @@ color: #757575;
 display: flex;
 flex-direction: column;
  margin-bottom: 4px;
+ position: relative;
+ left: 5px;
 }
-.modal-imput-icon-position{
+.modal-imput-position{
   position: relative;
+  margin-bottom: 10px;
 }
 
 
 .modal-imput-icon{
   position: absolute;
-  top: 50%;
-  left: 10px;
-transform: translateY(-50%);
+  top: 55%;
+  left: 15px;
+  
 }
-
+  .modal-imput-textarea-position{
+    margin-bottom: 20px;
+  } 
 .textarea-modal{
   width: 440px;
   height: 120px;
   resize: none;
-  margin-bottom: 20px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px; 
@@ -687,6 +690,14 @@ transform: translateY(-50%);
 }
 .textarea-modal:hover,.textarea-modal:focus{
   border-color: #2196F3;
+}
+
+.modal-checkbox-position{
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .modal-checkbox{
   position: absolute;
@@ -704,7 +715,6 @@ transform: translateY(-50%);
 .modal-checkbox-label{
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
 }
 .checkbox-castom{
 width: 16px;
@@ -749,6 +759,11 @@ line-height:calc(24/ 14);
 letter-spacing: 0.03em;
 color: #2196F3;
 }
+.modal-btb-position{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
 .modal-btb-send{
   width: 200px;
   height: 50px;
@@ -758,6 +773,7 @@ color: #2196F3;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  
 }
 .modal-btb-send-text{
   font-weight: 700;
@@ -769,10 +785,7 @@ text-align: center;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 }
-.modal-btb-wrap{
-  display: flex;
-  justify-content: center;
-}
+
 /*-----------PORTFOLIO-----------*/
 .work {
 }
